@@ -29,12 +29,20 @@ document.getElementById('almighty').addEventListener('click', function () {
     const afterinner = afterSet.innerText;
     afterSet.innerText = afterCalculation;
 
-    if(nexttxtflo => 1){
+    if(nexttxtflo >= 1){
         btnfr.removeAttribute('disabled');
     }else{
         btnfr.addAttribute('disabled')
     }
 
+
+    
+    if (afterCalculation >= 200) {
+        btnfrends.removeAttribute('disabled')
+    }else{
+        btnfrends.addAttribute('disabled');
+    
+    }
 
 
 
@@ -52,13 +60,6 @@ document.getElementById('almighty').addEventListener('click', function () {
 // but remove to hoitse 'disabled' //
       
 
-    // if (nexttxtflo => thePar) {
-
-    //     btnfrends.removeAttribute('disabled')
-    // }else{
-    //     btnfrends.addAttribute('disabled');
-    
-    // }
 
 
 });
